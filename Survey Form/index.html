@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Axiagroups Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- 1 -->
+    <h1 id="title">Axiagroups Survey Form</h1>
+    <!-- 2 -->
+    <p id="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
+    <!-- 3 -->
+    <form id="survey-form">
+      <fieldset>
+        <legend>Contact Info</legend>
+        <!-- 10 -->
+        <label for="name" id="name-label">
+          Enter Your Name:
+          <!-- 4 -->
+          <input
+            id="name"
+            name="name"
+            type="text"
+            placeholder="Your full name."
+            required
+          />
+        </label>
+        <!-- 10 -->
+        <label for="email" id="email-label">
+          Enter Your Email:
+          <!-- 5-6 -->
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Enter a valid email"
+            required
+          />
+        </label>
+        <!-- 10 -->
+        <label for="number" id="number-label">
+          Enter Your Age:
+          <!-- 7 -->
+          <input
+            id="number"
+            name="number"
+            type="number"
+            pattern="[0-9]"
+            max="120"
+            min="13"
+            placeholder="Your Phone Age."
+            required
+          />
+        </label>
+      </fieldset>
+      <fieldset>
+        <!-- 13 -->
+        <legend>Sex</legend>
+        <label for="male"
+          ><input id="male" type="radio" name="sex" value="male" /> Male
+        </label>
+        <label for="female"
+          ><input id="female" type="radio" name="sex" value="female" /> Female
+        </label>
+      </fieldset>
+      <fieldset>
+        Which Service do you want?
+        <!-- 14 -->
+        <div>
+          <input
+            type="checkbox"
+            id="web-design"
+            name="web-design"
+            value="web-design"
+            checked
+          />
+          <label for="web-design">Web Design</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            id="web-development"
+            name="web-development"
+            value="web-development"
+          />
+          <label for="web-development">Web Development</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            id="app-development"
+            name="app-development"
+            value="app-development"
+          />
+          <label for="app-development">Mobile App Development</label>
+        </div>
+        <legend>Service</legend>
+        <label for="dropdown">
+          How you want to pay?
+          <select id="dropdown">
+            <!-- 12 -->
+            <option value="">(select one)</option>
+            <option value="1">Paid.</option>
+            <option value="2">Unpaid.</option>
+            <option value="3">Paid with discount.</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Additional Comment</legend>
+        <label for="story">Tell us your story:</label>
+
+        <textarea id="story" name="story" rows="5" cols="33">
+ It was a dark and stormy night...
+        </textarea>
+      </fieldset>
+      <button id="submit" type="submit" value="Submit">Submit</button>
+    </form>
+  </body>
+</html>
